@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, session # 
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
+application = app
 
 # Sample product data
 products = [
@@ -24,6 +25,7 @@ def services():
 @app.route('/cart')
 def cart():
     return render_template('cart.html')
+
 
 @app.route('/add_to_cart/<string:product_name>')
 def add_to_cart(product_name):
@@ -49,3 +51,5 @@ def request_repair():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+

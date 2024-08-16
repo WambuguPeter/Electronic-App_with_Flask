@@ -14,70 +14,71 @@
         </div>
         <h1>Our Products</h1>
         <nav>
-            <a href="./index.html">Home</a>
-            <a href="./products.html">Products</a>
-            <a href="./services.html">Services</a>
-            <a href="./cart.html">Cart</a>
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('products_page') }}">Products</a>
+            <a href="{{ url_for('services') }}">Services</a>
+            <a href="{{ url_for('cart') }}">Cart</a>
         </nav>
+        
     </header>
 
     <main>
         <div class="product-page">
-            <!-- {% for product in products %} -->
+      
         <div class="product">
             <img src="../static/images/laptop stand.jpg" alt="Wireless-Keyboard">
             <h3>Laptop Stands</h3>
             <p>Price: Ksh. 800</p>
-            <a href="./cart.html">Add to Cart</a>
+            <a href="{{ url_for('cart') }}">Add to Cart</a>
         </div>
-        <!-- {% endfor %} -->
+        
         <div class="product">
             <img src="../static/images/monitor2.jpeg" alt="Wireless-Keyboard">
             <h3>monitor</h3>
-            <p>Price: Ksh. 3500</p>
-            <a href="./cart.html">Add to Cart</a>
+            <p>Price: Ksh. 15500</p>
+            <a href="{{ url_for('cart') }}">Add to Cart</a>
         </div>
         <div class="product">
             <img src="../static/images/Wired-Mouse.jpeg" alt="Wireless-Keyboard">
             <h3>Mouse</h3>
-            <p>Price: Ksh. 300</p>
-            <a href="./cart.html">Add to Cart</a>
+            <p>Price: Ksh. 450</p>
+            <a href="{{ url_for('cart') }}">Add to Cart</a>
         </div>
         <div class="product">
             <img src="../static/images/earphone.jpg" alt="Wireless-Keyboard">
             <h3>Wireless Earbuds</h3>
-            <p>Price: Ksh. 800</p>
-            <a href="./cart.html">Add to Cart</a>
+            <p>Price: Ksh. 1500</p>
+            <a href="{{ url_for('cart') }}">Add to Cart</a>
         </div>
         <div class="product">
             <img src="../static/images/wiredless-mouse.jpeg" alt="Wireless-Keyboard">
             <h3>Wireless-Mouse</h3>
             <p>Price: Ksh. 600</p>
-            <a href="./cart.html">Add to Cart</a>
+            <a href="{{ url_for('cart') }}">Add to Cart</a>
         </div>
         <div class="product">
             <img src="../static/images/wireless Keyboard.jpg" alt="Wireless-Keyboard">
             <h3>Wireless-Keyboard</h3>
-            <p>Price: Ksh. 700</p>
-            <a href="./cart.html">Add to Cart</a>
+            <p>Price: Ksh. 1400</p>
+            <a href="/templates/cart.html">Add to Cart</a>
         </div>
         <div class="product">
             <img src="../static/images/wired-Mouse1.jpeg" alt="Wireless-Keyboard">
             <h3>Wired-Mouse</h3>
-            <p>Price: Ksh. 300</p>
-            <a href="./cart.html">Add to Cart</a>
+            <p>Price: Ksh. 400</p>
+            <a href="{{ url_for('cart') }}">Add to Cart</a>
         </div>
         <div class="product">
             <img src="../static/images/Wired-Keyboard.jpeg" alt="Wireless-Keyboard">
             <h3>Wired Keyboard</h3>
-            <p>Price: Ksh. 400</p>
-            <a href="./cart.html">Add to Cart</a>
+            <p>Price: Ksh. 500</p>
+            <a href="{{ url_for('cart') }}">Add to Cart</a>
         </div>
         <div class="product">
             <img src="../static/images/charger.jpeg" alt="Wireless-Keyboard">
             <h3>Charger</h3>
-            <p>Price: Ksh. 2000</p>
-            <a href="./cart.html">Add to Cart</a>
+            <p>Price: Ksh. 1000</p>
+            <a href="{{ url_for('cart') }}">Add to Cart</a>
         </div>
         
         </div>

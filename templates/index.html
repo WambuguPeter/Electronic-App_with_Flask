@@ -14,11 +14,12 @@
         </div>
         <h1>Welcome to My Electronics Store</h1>
         <nav>
-            <a href="./index.html">Home</a>
-            <a href="./products.html">Products</a>
-            <a href="./services.html">Services</a>
-            <a href="./cart.html">Cart</a>
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('products_page') }}">Products</a>
+            <a href="{{ url_for('services') }}">Services</a>
+            <a href="{{ url_for('cart') }}">Cart</a>
         </nav>
+        
     </header>
 
     <!-- Hero Section with Slider -->
@@ -28,7 +29,7 @@
             <div class="caption">
                 <h2>Latest Electronics at Unbeatable Prices</h2>
                 <p>Check out our new arrivals!</p>
-                <a href="./products.html" class="btn">Shop Now</a>
+                <a href="{{ url_for('products_page') }}" class="btn">Shop Now</a>
             </div>
         </div>
         <div class="slide">
@@ -36,7 +37,7 @@
             <div class="caption">
                 <h2>Expert Repair Services</h2>
                 <p>Get your gadgets fixed by our professionals.</p>
-                <a href="./services.html" class="btn">Learn More</a>
+                <a href="{{ url_for('services') }}" class="btn">Learn More</a>
             </div>
         </div>
         <div class="slide">
@@ -44,7 +45,7 @@
             <div class="caption">
                 <h2>Special Discounts on Accessories</h2>
                 <p>Up to 50% off on selected items.</p>
-                <a href="./products.html" class="btn">Explore Deals</a>
+                <a href="{{ url_for('products_page') }}" class="btn">Explore Deals</a>
             </div>
         </div>
     </div>
@@ -53,13 +54,13 @@
         <section id="products" class="highlight">
             <h2>Our Products</h2>
             <p>Explore our range of electronic devices.</p>
-            <a href="./products.html" class="btn">View Products</a>
+            <a href="{{ url_for('products_page') }}" class="btn">View Products</a>
         </section>
         
         <section id="services" class="highlight">
             <h2>Our Services</h2>
             <p>We also offer repair services.</p>
-            <a href="./services.html" class="btn">View Services</a>
+            <a href="{{ url_for('services') }}" class="btn">View Services</a>
         </section>
     </main>
     <footer>

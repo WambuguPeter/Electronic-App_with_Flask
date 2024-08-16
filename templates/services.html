@@ -14,11 +14,12 @@
         </div>
         <h1>Our Services</h1>
         <nav>
-            <a href="./index.html">Home</a>
-            <a href="./products.html">Products</a>
-            <a href="./services.html">Services</a>
-            <a href="./cart.html">Cart</a>
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('products_page') }}">Products</a>
+            <a href="{{ url_for('services') }}">Services</a>
+            <a href="{{ url_for('cart') }}">Cart</a>
         </nav>
+        
     </header>
 
     <main>

@@ -14,11 +14,12 @@
         </div>
         <h1>Your Cart</h1>
         <nav>
-            <a href="./index.html">Home</a>
-            <a href="./products.html">Products</a>
-            <a href="./services.html">Services</a>
-            <a href="./cart.html">Cart</a>
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('products_page') }}">Products</a>
+            <a href="{{ url_for('services') }}">Services</a>
+            <a href="{{ url_for('cart') }}">Cart</a>
         </nav>
+        
     </header>
 
     <main>
@@ -26,7 +27,7 @@
             <h1>Coming Soon</h1>
             <p>We are working hard to bring you the best shopping experience.</p>
             <p>The cart functionality is under development and will be available soon!</p>
-            <a href="./index.html" class="btn">Back to Home</a>
+            <a href="{{ url_for('index') }}" class="btn">Back to Home</a>
         </div>
     </main>
 
